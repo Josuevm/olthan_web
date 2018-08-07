@@ -1,0 +1,61 @@
+.contact-info{
+    padding: 5em 0 0 0;
+}
+
+.info-card{
+    text-align: center;
+    background: #e1e1e1;
+}
+
+.info-card-head{
+    padding: 1em;
+    color: #fff;
+    background: #4DD9FF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+.info-card-text{
+    padding: 1em;
+    color: #081619;
+    line-height: 1.8em;
+}
+
+.header{
+    font-size:2em;
+	color:#081619;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-weight:600;
+	padding:.5em 0;
+	position:relative;
+}
+
+.header:before,.header:after{
+	content: '';
+    background: #dadada;
+    height: 2px;
+    position: absolute;
+    width: 10%;
+}
+
+.header:before{
+	top:0%;
+	left:-3%;
+}
+.header:after{
+	bottom:0%;
+	right:65%;
+}
+
+.grid iframe{
+    width: 100%;
+    min-height: 400px;
+}
+
+.grid{
+    margin: 3em 0 0;
+    width: 100%;
+}
+
