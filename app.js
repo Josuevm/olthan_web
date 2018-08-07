@@ -16,12 +16,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/dist')));
-
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  res.sendfile(path.join(__dirname, 'public/dist/index.html'));
+  res.sendFile(path.join(__dirname, 'public/dist/index.html'));
 });
 
 // error handler
@@ -34,4 +33,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 module.exports = app;

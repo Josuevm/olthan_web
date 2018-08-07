@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
 
-console.log(
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendfile(path.join(__dirname, 'public/dist/index.html'));
-})
-)
+  res.sendFile(path.join(__dirname, '/../public/dist/index.html'));
+});
+
+
 module.exports = router;
