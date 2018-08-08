@@ -12,6 +12,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BannerBottomComponent } from './banner-bottom/banner-bottom.component';
+import { FurnCarouselComponent } from './furn-carousel/furn-carousel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutUsComponent,
     ContactComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    BannerBottomComponent,
+    FurnCarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,71 @@
+.agile-banner{
+    position: relative;
+}
+
+.banner{
+    padding: 3em 0 0 0;
+}
+
+.agile-banner figure{
+    margin: 0;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-icons {
+    border-right: 1px solid #b3b1b1;
+    border-top: 1px solid #b3b1b1;
+    padding: 0.45em;
+    text-align: center;
+}
+
+.banner-icons h3 {
+    font-size: 1.2em;
+    color: #212121;
+    text-transform: uppercase;
+    margin: 1em 0;
+    position: relative;
+    padding-bottom: .8em;
+}
+
+.banner-icons h3:before {
+    content: '';
+    background: #13b3bb;
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    left: 36.9%;
+    bottom: 0%;
+}
+
+.banner-icons p {
+    color: #999;
+    line-height: 2em;
+}
+
+.banner-icons-effect {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    -moz-transition: ease-out 0.3s;
+    -o-transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    padding: 1em;
+}
+
+.img-responsive{
+    display: block;
+    min-width: 100%;
+    max-height: 400px;
+}
+
+.icons-right-box{
+    border-bottom: 1px solid #b3b1b1;
+    padding: 0;
+}
+
+.left-image-box {
+    padding: 0;
+}
