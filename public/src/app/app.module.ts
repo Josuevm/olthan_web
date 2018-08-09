@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -14,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BannerBottomComponent } from './banner-bottom/banner-bottom.component';
 import { FurnCarouselComponent } from './furn-carousel/furn-carousel.component';
+
+library.add(fas);
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import { FurnCarouselComponent } from './furn-carousel/furn-carousel.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    NgbCollapseModule
+    NgbCollapseModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@
 
 .agile-banner figure{
     margin: 0;
+    padding: 0;
     background: #fff;
     overflow: hidden;
     position: relative;
@@ -16,8 +17,13 @@
 .banner-icons {
     border-right: 1px solid #b3b1b1;
     border-top: 1px solid #b3b1b1;
-    padding: 0.45em;
+    padding: 0;
     text-align: center;
+}
+
+.icons-right-box > .row {
+    margin-left: 0;
+    margin-right: 0px;
 }
 
 .banner-icons h3 {
@@ -31,7 +37,7 @@
 
 .banner-icons h3:before {
     content: '';
-    background: #13b3bb;
+    background: #4DD9FF;
     width: 25%;
     height: 2px;
     position: absolute;
@@ -42,6 +48,19 @@
 .banner-icons p {
     color: #999;
     line-height: 2em;
+}
+
+.banner-icons fa-icon{
+    font-size: 2em;
+    color: #fff;
+    font-family: FontAwesome;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    font-style: normal;
+    display: inline-block;
+    background: #4DD9FF;
+    line-height: 2.5em;
 }
 
 .banner-icons-effect {
@@ -55,14 +74,64 @@
     padding: 1em;
 }
 
+.banner-icons-effect::before {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 2px solid #b1b1b1;
+    border-top: 2px solid #b1b1b1;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.banner-icons-effect::after {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-left: 2px solid #b1b1b1;
+    border-bottom: 2px solid #b1b1b1;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.banner-icons:hover .banner-icons-efect::before{
+    opacity: 1;
+    right: 5px;
+    top: 5px;
+}
+
+.banner-icons:hover .banner-icons-efect::after{
+    opacity: 1;
+    left: 5px;
+    bottom: 5px;
+}
+
+.banner-icons:hover{
+    background:#f5f5f5;
+}
+
 .img-responsive{
     display: block;
-    min-width: 100%;
-    max-height: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 .icons-right-box{
-    border-bottom: 1px solid #b3b1b1;
+    //border-bottom: 1px solid #b3b1b1;
     padding: 0;
 }
 
