@@ -18,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BannerBottomComponent } from './banner-bottom/banner-bottom.component';
 import { FurnCarouselComponent } from './furn-carousel/furn-carousel.component';
+import { PortfolioNavComponent } from './portfolio-nav/portfolio-nav.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 library.add(fas);
 
@@ -31,7 +33,9 @@ library.add(fas);
     HomeComponent,
     PortfolioComponent,
     BannerBottomComponent,
-    FurnCarouselComponent
+    FurnCarouselComponent,
+    PortfolioNavComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

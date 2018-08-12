@@ -1,0 +1,23 @@
+<div class="nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3 class="active" (click)= "setCategory('kitchen')" [class.active]= "category == 'kitchen'"> 
+          Cocina 
+        </h3>
+      </div>
+      <div class="col-4">
+        <h3 (click)= "setCategory('closets')" [class.active]= "category == 'closets'"> 
+          Closets 
+        </h3>
+      </div>
+      <div class="col-4">
+        <h3 (click)= "setCategory('bath')" [class.active]= "category == 'bath'"> 
+          Baños 
+        </h3>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<app-portfolio [category]= category ></app-portfolio>
